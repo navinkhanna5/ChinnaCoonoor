@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: member-login-backend
+    env: node
+    plan: free
+    buildCommand: "npm install"
+    startCommand: "node server.js"
+    envVars:
+      - key: DSN
+        value: MemberLogin
